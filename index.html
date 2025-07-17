@@ -615,7 +615,7 @@
         const value = parseFloat(latestData[index + 1]) || 0;
         let statusClass = 'status-off';
         if (value > 1) statusClass = 'status-active';
-        else if (value > 0.03) statusClass = 'status-standby';
+        else if (value > 0.05) statusClass = 'status-standby';
 
         const filterItem = document.createElement('div');
         filterItem.className = `filter-item ${statusClass}`;
